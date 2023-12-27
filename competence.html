@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    
+    
+    <title>Compétences</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="apropos.html">BOUHMAD MHAMED</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="apropos.html" style="--navAni:1">À propos</a></li>
+                <li><a href="formationcertification.html" style="--navAni:2">Formations & Certifications</a></li>
+                <li><a href="competence.html" class="active" style="--navAni:3">Compétences</a></li>
+                <li><a href="projet.html" style="--navAni:4">Projets</a></li>
+                <li><a href="stage.html" style="--navAni:5">Stages</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+            <div class="left-section">
+            <div class="detail">
+                <h1><span style="color:#f9532d;">Compétences</span></h1><br>
+                <p>
+                    <span style="color:#ffe4da;"><b>Langages de programmation :</b></span>
+                    Python, C++, C#, JAVA, PLSQL<br>
+                    <span style="color:#ffe4da;"><b>Base de données :</b></span>
+                    SQLite, MySQL, Microsoft SQL Server, MongoDB, PostgreSQL, Oracle<br>
+                    <span style="color:#ffe4da;"><b>Développement WEB :</b></span>
+                    PHP, BOOTSTRAP, HTML, CSS, Laravel <br>
+                    <span style="color:#ffe4da;"><b>Conception et Modélisation :</b> </span>
+                    Merise, UML<br>
+                    <span style="color:#ffe4da;"><b>Outils de Développement :</b> </span>
+                    Visual studio, Visual studio code, HeidiSQL<br>
+                    <span style="color:#ffe4da;"><b>Réseaux et Télécommunications :</b></span><br> 
+                    Les modèles réseaux OSI & TCP/IP<br> 
+                    Guide d'onde et fibre optique <br>
+                    Traitement analogique et numérique de signal<br>
+                    Services réseaux sous Unix
+                </p>
+            </div></div>
+            <div class="right-section1">
+            
+                <div class="detail">
+                <section>
+                    <div class="swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide--one">
+                          <span>PYTHON</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide--two">
+                          <span>ORACLE</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide--three">
+                          <span>VISUAL STUDIO CODE</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide--four">
+                          <span>LARAVEL</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide--five">
+                          <span>HeidiSQL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                  </div></div>
+            
+        </div>
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script><script  src="script.js"></script>
+</body>
+
+</html>

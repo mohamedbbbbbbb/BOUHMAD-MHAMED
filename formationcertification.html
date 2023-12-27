@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>Formations & Certifications</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="apropos.html">BOUHMAD MHAMED</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="apropos.html" style="--navAni:1">À propos</a></li>
+                <li><a href="formationcertification.html" class="active" style="--navAni:2">Formations & Certifications</a></li>
+                <li><a href="competence.html" style="--navAni:3">Compétences</a></li>
+                <li><a href="projet.html" style="--navAni:4">Projets</a></li>
+                <li><a href="stage.html" style="--navAni:5">Stages</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+            <div class="left-section">
+            <div class="detail">
+                <h1><span style="color:#f9532d;">Formations</span></h1><br>
+                <p><span style="color:#ffe4da;"><B>Institut Supérieur d'Ingénierie et des Affaires – CASABLANCA <br>
+                    [2022 - Présent] <br></B></span>
+                    En cours de préparation de cycle d’ingénieur en systèmes d’Information<br>
+                    <span style="color:#ffe4da;"><b>Ecole Supérieur de Technologie – FES <br>
+                        [2020 - 2022] <br></b></span>
+                        DUT en Réseau et Télécommunications <br>
+                        <span style="color:#ffe4da;"><B>Faculté des Sciences Ain Chock – CASABLANCA <br>
+                        [2019 - 2020] <br></B></span>
+                        Première année formation initiale DEUST, filière SMPC (Science de la Matière Physique 
+                    Chimie)<br>
+                    <span style="color:#ffe4da;"><B>Baccalauréat – CASABLANCA <br>
+                        [2018 - 2019] <br></B></span>
+                       Baccalauréat option Physique Chimie avec mention bien<br>
+                </p>
+                </div></div>
+
+                
+                <div class="right-section">
+                <div class="detail">
+                <h1><span style="color:#f9532d;">Certifications</span></h1><br>
+                <p>
+                    <span style="color:#ffe4da;"><B>LinkedIn Learning <br>
+                        [août 2023]<br></B></span>
+                        L'essentiel de SQL<br>
+                        <span style="color:#ffe4da;"><B>LinkedIn Learning <br>
+                        [mai 2023]<br></B></span>
+                        Marketing sur les réseaux sociaux <br>
+                        Stratégie marketing<br>
+                        Les outils du marketing digital <br>
+                        Social Selling<br>
+                        Marketing de contenu : Les newsletters<br>
+                        <span style="color:#ffe4da;"><B>Red Hat<br>
+                        [janv 2023]<br></B></span>
+                        Red Hat System Administration I (RH124)<br><br>
+                </p>
+            </div>
+        </div></div>
+        </div>
+    </section>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

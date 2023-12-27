@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:700&amp;display=swap'>
+    <link rel="stylesheet" href="style2.css">
+    
+    <title>Projets</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="apropos.html">BOUHMAD MHAMED</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="apropos.html" style="--navAni:1">À propos</a></li>
+                <li><a href="formationcertification.html" style="--navAni:2">Formations & Certifications</a></li>
+                <li><a href="competence.html" style="--navAni:3">Compétences</a></li>
+                <li><a href="projet.html" class="active" style="--navAni:4">Projets</a></li>
+                <li><a href="stage.html" style="--navAni:5">Stages</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+            <div class="detail">
+              <div class="card-wraper">
+                <div class="card-container">
+                  
+
+                    <div class="card">  
+                      <div class="front">
+                        <img src="11.png" alt="" />
+                      </div>
+                      <div class="back">
+                        <div class="details">
+                          <div class="caption">
+                            <h2><span style="color:#f9532d;"> Application DESKTOP </span></h2><br>
+                            
+                            Une application de bureau multifonctionnelle que j'ai développée de A à Z avec Python<br>
+                            Création de compte. <br>
+                            Système de connexion.<br>
+                            Page d'accueil : La page d'accueil regorge de fonctionnalités pratiques, dont :<br>
+                            Un lecteur de musique.
+                            Un service météo. 
+                            Une calculatrice.
+                            Un jeu de Tic-Tac-Toe.<br>
+                            Gestion du recrutement : Mon application inclut également un module de gestion de bureau de recrutement, et des interfaces dédiées pour les employés.
+                            
+                          </div>
+              
+                          <div class="social-icon">
+                            <main>
+                                <button onclick="byFile()">
+                                    <span>Code source</span>
+                                    <div></div>
+                                </button>
+                            </main>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="card">
+                      <div class="front">
+                        <img src="33.png"
+                          alt="" />
+                      </div>
+                      <div class="back">
+                        <div class="details">
+                          <div class="caption">
+                            <h2><span style="color:#f9532d;">Application DESKTOP</span></h2><br>
+                            Gestion des ventes avec Python
+                          </div>
+              
+                          <div class="social-icon">
+                            <main>
+                                <button onclick="helloFile()">
+                                    <span>Code source</span>
+                                    <div></div>
+                                </button>
+                            </main>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="card">
+                      <div class="front">
+                        <img src="22.png"
+                          alt="" />
+                      </div>
+                      <div class="back">
+                        <div class="details">
+                          <div class="caption">
+                            <h2><span style="color:#f9532d;">Application DESKTOP</span></h2><br>
+                            Gestion de location des maisons avec C#
+                          </div>
+                          <div class="social-icon">
+                            <main>   
+                                  
+                                    <button onclick="loadFile()">
+                                    <span>Code source</span>
+                                    <div></div>
+                                  </button>
+                                
+                            </main>
+                          </div></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    function loadFile() {
+      var a = document.createElement("a");
+      a.href="locationdesmaisonsCs.rar";
+      a.download = "true";
+      document.body.append(a);
+      a.click();
+      document.body.removeChild(a);
+  }</script>
+  <script>
+    function helloFile() {
+      var a = document.createElement("a");
+      a.href="SupermarketPussinboots.rar";
+      a.download = "true";
+      document.body.append(a);
+      a.click();
+      document.body.removeChild(a);
+  }</script>
+  <script>
+    function byFile() {
+      var a = document.createElement("a");
+      a.href="multiapp.rar";
+      a.download = "true";
+      document.body.append(a);
+      a.click();
+      document.body.removeChild(a);
+  }</script>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script><script  src="script1.js"></script>
+    
+</body>
+
+</html>

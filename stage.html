@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="style3.css">
+    <title>Stages</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="apropos.html">BOUHMAD MHAMED</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="apropos.html" style="--navAni:1">À propos</a></li>
+                <li><a href="formationcertification.html" style="--navAni:2">Formations & Certifications</a></li>
+                <li><a href="competence.html" style="--navAni:3">Compétences</a></li>
+                <li><a href="projet.html" style="--navAni:4">Projets</a></li>
+                <li><a href="stage.html" class="active" style="--navAni:5">Stages</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="container">
+      <div class="figure-wraper">
+        
+        <div class="main">
+          
+                <figure>
+                    
+                    <img
+                      src="1.png"
+                      alt="">
+                    <figcaption>
+                      <div class="caption-title">HOPE 3K</div>
+                      <div class="caption-full">
+                        <span style="color:#fcfcfc;"><b>Technicien Fibre Optique Inwi [08/2021 - 09/2021]<br><br></b></span>
+                        - Installer les équipements et assembler les éléments, les raccorder aux boîtiers.<br> 
+                        - Assurer la conformité et la sécurité des câbles.<br>
+                        - Intervenir en cas de panne : analyse de la situation et dépannage.<br>
+                        - Rédiger un suivi de travaux à la fin de chaque installation.</div>
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="2.png"
+                      alt="">
+                    <figcaption>
+                      <div class="caption-title">PCS Invest</div>
+                      <div class="caption-full">
+                        <span style="color:#fcfcfc;"><b>Ingénieur Déploiement Fibre Orange Maroc [15/04/2022 - 15/06/2022]<br></b></span>
+                        - Assurer le suivi du process passant par la livraison du matériel jusqu’à la réception des travaux.<br>
+                        - Assurer le déploiement de projet Orange suivant le planning mis en place.<br>
+                        - Superviser l’équipe technique sur terrain.<br>
+                        - Assurer le suivi terrain post installation.
+                        </div>
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="3.png"
+                      alt=" " >
+                    <figcaption>
+                      <div class="caption-title">ZINE Capital Invest</div>
+                      <div class="caption-full">
+                        <span style="color:#fcfcfc;"><b>Assistant Data Analyst [01/08/2023 - 01/10/2023]<br><br></b></span>
+                        - Analyse et réponse aux besoins des utilisateurs <br>
+                        - Développement de requêtes SQL
+                      </div>
+                    </figcaption>
+                  </figure>
+                
+            </div>
+            </div>
+            
+                
+        </div>
+    </section>
+    <script src="script2.js"></script>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

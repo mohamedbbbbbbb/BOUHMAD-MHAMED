@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>BOUHMAD MHAMED</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="apropos.html">BOUHMAD MHAMED</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="apropos.html" class="active" style="--navAni:1">À propos</a></li>
+                <li><a href="formationcertification.html" style="--navAni:2">Formations & Certifications</a></li>
+                <li><a href="competence.html" style="--navAni:3">Compétences</a></li>
+                <li><a href="projet.html" style="--navAni:4">Projets</a></li>
+                <li><a href="stage.html" style="--navAni:5">Stages</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+            <div class="detail">
+                <h3>Salut, c'est moi</h3>
+                <h1>Je m'appelle <span style="color:#f9532d;">Mhamed</span></h1>
+                <p>Je suis étudiant en deuxième année cycle d'ingénieur en systèmes d’information, passionné par les nouvelles technologies et à la recherche d'un stage en Big Data pour mettre en pratique mes connaissances et développer mes compétences. Je suis motivé pour contribuer à des projets innovants et travailler au sein d'une équipe dynamique. Je suis ravi de pouvoir échanger avec vous.<br>
+                </p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/mhamed-bouhmad-0ba44a239/" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/mohbouhmadi/" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://web.facebook.com/mhamed.bouhmad" style="--socialAni:4"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="mailto:mhamed.bouhmad01@gmail.com?SUBJECT=Offre De Stage" style="--socialAni:4"><i class='bx bxl-gmail'></i></a>
+                    <a href="https://wa.me/0617368417" style="--socialAni:4"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="tel:+212617368417" style="--socialAni:4"><i class='bx bx-phone-call'></i></a>
+                </div>
+                    <br>
+                <button class="button" onclick="loadFile()">
+                    <span class="button-content"> <b>Download CV</b></span>
+                </button>
+            </div>
+            <div class="img-sec">
+                <div class="images">
+                    <img src="f-1.png" alt="" class="img-w">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function loadFile() {
+          var a = document.createElement("a");
+          a.href="CV.pdf";
+          a.download = "true";
+          document.body.append(a);
+          a.click();
+          document.body.removeChild(a);
+      }</script>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
